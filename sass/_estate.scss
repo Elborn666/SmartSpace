@@ -1,0 +1,125 @@
+.estate {
+    padding-top: 102px;
+}
+.estate__box {
+    padding: 130px 15px 0px 15px;
+}
+.estate__top {
+    display: flex;
+    justify-content: space-between;
+}
+.estate__subtitle {
+    line-height: 24px;
+    width: 480px;
+    padding: 15px 0px 50px 0px;
+}
+.estate__button {
+    padding: 21px 33px 21px 33px;
+    box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+.estate__button:hover {
+    background-color: #f3230c;
+    transform: scale(0.8);
+}
+/*====================== Т А Б Ы ========================*/
+
+.estate__tabs-nav {
+    display: flex;
+    padding-bottom: 45px;
+    column-gap: 50px;
+}
+.estate__tabs-buttons {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 26px;
+    background-color: #fff;
+}
+.estate__tabs-buttons:hover {
+    color: #F85A47;
+    border-bottom: 2px solid #F85A47;
+}
+.estate__tabs-items {
+    display: flex;
+    gap: 30px;
+}
+.estate__tabs-item {
+    position: relative;
+}
+.estate__tabs-options {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    z-index: 25;
+}
+.estate__tabs-option {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 6px 12px;
+    transition: background-color 0.3s ease 0s ;
+}
+.estate__tabs-option:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.estate__tabs-image {
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease 0s; 
+}
+.estate__tabs-image:hover {
+    transform: scale(1.1);
+}
+.estate__tabs-image img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/*====================== Т А Б Ы ========================*/
+@media(max-width:1060px){
+    .estate__box {
+        padding: 50px 15px 0px 15px;
+    }
+    .estate {
+        padding-top: 0px;
+    }
+}
+@media(max-width:900px){
+    .estate__tabs-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 20px;
+    }
+    .estate__subtitle {
+        padding: 15px 0px 20px 0px;
+    }
+}
+@media(max-width:800px){
+    .estate__top {
+        flex-direction: column;
+    }
+    .estate__button {
+        margin-bottom: 10px;
+    }
+    .estate__button {
+        width: 100%;
+    }
+    .estate__subtitle {
+        width: 100%;
+    }
+    .estate__tabs-items {
+        flex-direction: column;
+    }
+    .estate__title {
+        font-size: 36px;
+    }
+}

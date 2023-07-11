@@ -1,0 +1,134 @@
+.week {
+    padding-top: 123px;
+}
+.week__box {
+    padding: 120px 15px 0px 15px;
+}
+.week__title {
+    padding-bottom: 95px;
+    text-align: center;
+}
+.week__content {
+    background-color: #F1FFFF;
+    display: flex;
+    justify-content: space-between;
+}
+.week__slide {
+    flex: 0 1 50%;
+    padding: 40px 0px 0px 40px;
+}
+.week__ibg {
+    filter: drop-shadow(0px 163px 80px rgba(0, 0, 0, 0.04)) drop-shadow(0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704)) drop-shadow(0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963)) drop-shadow(0px 32.6px 13px rgba(0, 0, 0, 0.02)) drop-shadow(0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037)) drop-shadow(0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963)) drop-shadow(48px 58px 44px rgba(0, 0, 0, 0.09));
+    padding:  0px 40px;
+    margin-top: -113px;
+}
+.week__info {
+    flex: 0 1 50%;
+    padding: 80px 0px 0px 30px;
+}
+.week__subtitle {
+    padding-bottom: 30px;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 135.48%;
+    width: 380px;
+}
+.week__text {
+    padding-bottom: 40px;
+    line-height: 150%;
+    color: #545A58;
+    width: 344px;
+}
+.week__colums {
+    display: flex;
+}
+.week__items {
+    padding-bottom: 17px;
+}
+.week__items-top {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 135.29%;
+    padding-bottom: 12px;
+}
+.week__items-bottom {
+    font-size: 17px;
+    line-height: 135.29%;
+    color: #545A58;
+    padding: 0px 60px 37px 0px;
+}
+.week__button {
+    padding: 16px 37px;
+    box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+}
+.week__img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.week__ibg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.week__button:hover {
+    background-color: #f3230c;
+    transform: scale(0.8);
+}
+@media(max-width:1060px){
+    .week__box {
+        padding: 50px 15px 0px 15px;
+    }
+    .week {
+        padding-top: 0px;
+    }
+    .week__title {
+        padding-bottom: 0px;
+    }
+}
+@media(max-width:900px){
+    .week__content {
+        flex-direction: column-reverse;
+    }
+    .week__subtitle {
+        width: 100%;
+    }
+    .week__text {
+        width: 100%;
+    }
+    .week__button {
+        width: 100%;
+    }
+    .week__info {
+        padding: 40px 0px 0px 30px;
+    }
+}
+@media(max-width:600px){
+    .week__info {
+        padding: 20px 0px 0px 0px;
+    }
+    .week__text {
+        padding-bottom: 20px;
+    }
+    .week__subtitle {
+        padding-bottom: 20px;
+    }
+    .week__items-bottom {
+        padding: 0px 60px 15px 0px;
+    }
+    .week__slide {
+        padding: 20px 0px 0px 40px;
+    }
+}
+@media(max-width:500px){
+    .week__items-bottom {
+        padding: 0px 20px 15px 0px;
+    }
+}

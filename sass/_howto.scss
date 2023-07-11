@@ -1,0 +1,89 @@
+.howto__box {
+    padding: 150px 15px 0px 15px;
+}
+.howto__title {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.howto__row {
+    position: relative;
+}
+.howto__colum {
+    display: flex;
+    text-align: center;
+    gap: 160px;
+}
+
+.howto__item01::after{
+    content: "";
+    background-image: url(/icon/howto/point01.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 240px;
+    width: 18%;
+    height: 5%; 
+}
+.howto__item03::before{
+    content: "";
+    background-image: url(/icon/howto/point02.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 700px;
+    width: 18%;
+    height: 5%;
+}
+.item {
+    flex: 0 1 33.333%;
+    align-items: center;
+    justify-content: center;
+}
+.howto__icon {
+    padding-bottom: 50px;
+}
+.howto__top {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+.howto__text {
+    line-height: 26px;
+    width: 260px;
+    color: #333333;
+}
+@media(max-width:1199px){
+    .howto__item01::after{
+        display: none;
+    }
+    .howto__item03::before{
+        display: none;
+    }
+}
+@media(max-width:1060px){
+    .howto__colum {
+        row-gap: 20px;
+        column-gap: 50px;
+    }
+    .howto__text {
+        min-width: 100%;
+    }
+    .howto__box {
+        padding: 50px 15px 0px 15px;
+    }
+    .howto__title {
+        padding-bottom: 40px;
+    }
+}
+@media(max-width:900px){
+    .howto__colum {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width:640px){
+    .howto__colum {
+        flex-direction: column;
+    }
+}
