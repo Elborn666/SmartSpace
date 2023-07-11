@@ -1,53 +1,55 @@
-.estate {
-    padding-top: 102px;
+.estate__container {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
-.estate__box {
-    padding: 130px 15px 0px 15px;
-}
-.estate__top {
+.estate__body {
     display: flex;
     justify-content: space-between;
 }
-.estate__subtitle {
-    line-height: 24px;
-    width: 480px;
-    padding: 15px 0px 50px 0px;
+.estate__title {
+    margin-bottom: 15px;
 }
-.estate__button {
+.estate__subtitle {
+    margin-bottom: 50px;
+    width: 480px;
+    line-height: 24px;
+}
+.estate__button-all {
     padding: 21px 33px 21px 33px;
     box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
     border-radius: 5px;
-    transition-duration: 0.5s;
-}
-.estate__button:hover {
-    background-color: #f3230c;
-    transform: scale(0.8);
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: #f3230c;
+        transform: scale(0.8);
+    }
 }
 /*====================== Т А Б Ы ========================*/
 
-.estate__tabs-nav {
+.estate__list {
     display: flex;
     padding-bottom: 45px;
     column-gap: 50px;
 }
-.estate__tabs-buttons {
+.estate__button {
     font-size: 19px;
     font-weight: 600;
     line-height: 26px;
-    background-color: #fff;
+    background-color: var(--white-color);
+    cursor: pointer;
+    &:hover {
+        color: var(--button-color);
+        text-decoration: underline;
+    }   
 }
-.estate__tabs-buttons:hover {
-    color: #F85A47;
-    border-bottom: 2px solid #F85A47;
-}
-.estate__tabs-items {
+.estate__tab-list {
     display: flex;
     gap: 30px;
 }
-.estate__tabs-item {
+.estate__tab-item {
     position: relative;
 }
-.estate__tabs-options {
+.estate__tab-options {
     position: absolute;
     left: 14px;
     top: 14px;
@@ -56,33 +58,26 @@
     gap: 6px;
     z-index: 25;
 }
-.estate__tabs-option {
+.estate__tab-option {
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid var(--white-color);
     background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
+    color:  var(--white-color);
     padding: 6px 12px;
     transition: background-color 0.3s ease 0s ;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 }
-.estate__tabs-option:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.estate__tabs-image {
+.estate__tab-image {
     position: relative;
     display: block;
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease 0s; 
-}
-.estate__tabs-image:hover {
-    transform: scale(1.1);
-}
-.estate__tabs-image img {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 /*====================== Т А Б Ы ========================*/
 @media(max-width:1060px){

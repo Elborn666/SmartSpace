@@ -1,17 +1,15 @@
-.week {
-    padding-top: 123px;
-}
-.week__box {
-    padding: 120px 15px 0px 15px;
+.week__container {
+    padding-top: 120px;
+    padding-bottom: 190px;
 }
 .week__title {
-    padding-bottom: 95px;
+    margin-bottom: 95px;
     text-align: center;
 }
 .week__content {
-    background-color: #F1FFFF;
     display: flex;
     justify-content: space-between;
+    background-color: #F1FFFF;
 }
 .week__slide {
     flex: 0 1 50%;
@@ -24,37 +22,37 @@
 }
 .week__info {
     flex: 0 1 50%;
-    padding: 80px 0px 0px 30px;
+    padding: 80px 0px 0px 70px;
 }
 .week__subtitle {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: 31px;
     font-weight: 600;
     line-height: 135.48%;
     width: 380px;
 }
 .week__text {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     line-height: 150%;
-    color: #545A58;
+    color: var(--text-color);
     width: 344px;
 }
 .week__colums {
     display: flex;
 }
 .week__items {
-    padding-bottom: 17px;
+    margin-bottom: 17px;
 }
 .week__items-top {
+    margin-bottom: 12px;
     font-size: 17px;
     font-weight: 700;
     line-height: 135.29%;
-    padding-bottom: 12px;
 }
 .week__items-bottom {
     font-size: 17px;
     line-height: 135.29%;
-    color: #545A58;
+    color: var(--text-color);
     padding: 0px 60px 37px 0px;
 }
 .week__button {
@@ -62,7 +60,11 @@
     box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
     border-radius: 5px;
     text-transform: uppercase;
-    transition-duration: 0.5s;
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: #f3230c;
+        transform: scale(0.8);
+    }
 }
 .week__img {
     width: 100%;
@@ -77,10 +79,6 @@
     top: 0;
     left: 0;
     object-fit: cover;
-}
-.week__button:hover {
-    background-color: #f3230c;
-    transform: scale(0.8);
 }
 @media(max-width:1060px){
     .week__box {

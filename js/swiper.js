@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-forward',
-      prevEl: '.swiper-button-back',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
