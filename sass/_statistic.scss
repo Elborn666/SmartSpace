@@ -1,0 +1,77 @@
+.statistic__body {
+    display: flex;
+    flex-direction: column-reverse;
+ }
+ .statistic__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+ }
+ .statistic__list-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ 
+    position: relative;
+ 
+    padding: 20px 24px;
+ 
+    width: 170px;
+    height: 133px;
+    background-color: #F7F7F7;
+    color: var(--title-color);
+ }
+ .statistic__list-subtitle {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.05em;
+ }
+ .statistic__list-subtitle::after{
+    content: "";
+    position: absolute;
+    background-image: url('../icon/cross.svg');
+    background-repeat: no-repeat;
+    right: 27px;
+    top: 38px;
+ 
+    width: 13px;
+    height: 22px;
+ }
+ .statistic__list-text {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.36;
+ }
+ .statistic__content {
+    margin-bottom: 44px;
+ }
+ .statistic__content-title {
+    margin: 20px 0px;
+ }
+ .statistic__content-text {
+    color: var(--basic-color);
+ }
+ @media screen and (min-width:768px) {
+    .statistic__list {
+       flex-wrap: nowrap;
+    }
+    .statistic__list > .statistic__list-card:nth-child(even){
+      margin-top: 30px;
+   }
+ }
+ @media screen and (min-width:1200px) {
+    .statistic__body {
+       display: flex;
+       flex-direction: row;
+    }
+    .statistic__content {
+       margin-bottom: 0px;
+       margin-left: 130px;
+    }
+    .statistic__list {
+       flex-wrap: wrap;
+    }
+ }
