@@ -30,37 +30,37 @@
     line-height: 26px;
     color: var(--text2-color);
 }
-@media(max-width:1199px){
-    .howto__item01::after{
-        display: none;
-    }
-    .howto__item03::before{
-        display: none;
-    }
-}
-@media(max-width:1060px){
-    .howto__colum {
-        row-gap: 20px;
-        column-gap: 50px;
-    }
-    .howto__text {
-        min-width: 100%;
-    }
-    .howto__box {
-        padding: 50px 15px 0px 15px;
+@media(max-width:1200px){
+    .howto__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .howto__title {
-        padding-bottom: 40px;
+        margin-bottom: 30px;
+    }
+    .howto__list {
+        gap: 80px;
     }
 }
-@media(max-width:900px){
-    .howto__colum {
+@media(max-width:992px){
+    .howto__title {
+        font-size: 34px;
+    }
+    .howto__list {
         flex-wrap: wrap;
-        justify-content: center;
+        gap: 30px;
     }
 }
-@media(max-width:640px){
-    .howto__colum {
-        flex-direction: column;
+@media(max-width:600px){
+    .howto__subtitle {
+        margin-top: -150px;
+    }
+}
+@media(max-width:480px){
+    .howto__title {
+        font-size: 22px;
+    }
+    .howto__subtitle {
+        font-size: 18px;
     }
 }

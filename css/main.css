@@ -215,7 +215,6 @@ body {
 .hero__partner-container {
   position: relative;
   z-index: 50;
-  margin-top: 10px;
 }
 
 .hero__partner-text {
@@ -265,15 +264,16 @@ body {
 @media (max-width: 1200px) {
   .hero__body {
     display: block;
+    padding-top: 100px;
   }
   .hero__container::after {
     display: none;
   }
+  .hero__partner-container {
+    margin-top: 15px;
+  }
 }
 @media (max-width: 992px) {
-  .hero__body {
-    padding-top: 100px;
-  }
   .hero__main-title {
     margin-bottom: 15px;
   }
@@ -289,6 +289,31 @@ body {
   .hero__partner-list {
     gap: 0;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .hero__swimmer-container {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .hero__form {
+    background-image: none;
+    min-width: 100%;
+  }
+  .hero__input {
+    padding: 20px;
+  }
+  .hero__input::placeholder {
+    opacity: 0;
+  }
+}
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 22px;
+  }
+  .hero__main-title {
+    font-size: 16px;
   }
 }
 .howto__container {
@@ -329,38 +354,38 @@ body {
   color: var(--text2-color);
 }
 
-@media (max-width: 1199px) {
-  .howto__item01::after {
-    display: none;
-  }
-  .howto__item03::before {
-    display: none;
-  }
-}
-@media (max-width: 1060px) {
-  .howto__colum {
-    row-gap: 20px;
-    column-gap: 50px;
-  }
-  .howto__text {
-    min-width: 100%;
-  }
-  .howto__box {
-    padding: 50px 15px 0px 15px;
+@media (max-width: 1200px) {
+  .howto__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .howto__title {
-    padding-bottom: 40px;
+    margin-bottom: 30px;
+  }
+  .howto__list {
+    gap: 80px;
   }
 }
-@media (max-width: 900px) {
-  .howto__colum {
+@media (max-width: 992px) {
+  .howto__title {
+    font-size: 34px;
+  }
+  .howto__list {
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 30px;
   }
 }
-@media (max-width: 640px) {
-  .howto__colum {
-    flex-direction: column;
+@media (max-width: 600px) {
+  .howto__subtitle {
+    margin-top: -150px;
+  }
+}
+@media (max-width: 480px) {
+  .howto__title {
+    font-size: 22px;
+  }
+  .howto__subtitle {
+    font-size: 18px;
   }
 }
 .estate__container {
@@ -1182,12 +1207,11 @@ body {
   z-index: 50;
   top: 100px;
   right: -100%;
-  min-width: 300px;
+  min-width: 600px;
   height: 400px;
   padding: 20px 40px;
   margin: 0 auto;
   background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
 .burger__nav {
