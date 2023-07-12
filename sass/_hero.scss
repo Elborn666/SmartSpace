@@ -159,4 +159,13 @@
     .hero__partner-text {
         margin-bottom: 0px;
     }
+    .hero__partner-list {
+        gap: 0;
+        flex-wrap: wrap;
+    }
 }
+@media(max-width:600px){
+   
+}
+
+

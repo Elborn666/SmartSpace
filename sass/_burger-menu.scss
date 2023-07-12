@@ -1,5 +1,5 @@
 #burger__toggle {
-   position: fixed;
+   position: absolute;
    top: 43px;
    right: 26px;
    opacity: 0;
@@ -7,7 +7,7 @@
  .burger__btn {
    display: none;
    align-items: center;
-   position: fixed;
+   position: absolute;
    top: 37px;
    right: 20px;
    width: 26px;
