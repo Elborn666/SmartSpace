@@ -6,6 +6,7 @@
    z-index: 100;
 }
 .menu__container {
+   position: relative;
    min-height: 100px;
 }
 .menu__body {
@@ -42,10 +43,7 @@
    }
 }
 @media(max-width:600px){
-   .menu__container {
-       flex-direction: column;
-   }
-   .menu__list {
-       flex-wrap: wrap;
+   .menu__nav {
+       display: none;
    }
 }
