@@ -57,7 +57,12 @@
     }
 }
 @media(max-width:480px){
+    .howto__container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
     .howto__title {
+        margin-bottom: 15px;
         font-size: 22px;
     }
     .howto__subtitle {

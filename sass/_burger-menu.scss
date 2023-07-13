@@ -98,3 +98,11 @@
      display: none;
   }
 }
+@media(max-width:480px){
+  #burger__toggle {
+    top: 27px;
+  }
+  .burger__btn {
+    top: 20px;
+  }
+}
