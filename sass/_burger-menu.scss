@@ -40,7 +40,7 @@
   right: -100%;
 
   margin: 0 auto;
-  min-width: 600px;
+  min-width: 350px;
   min-height: 400px;
   padding: 20px 40px;
   
@@ -49,6 +49,7 @@
 .burger__nav {
    display: flex;
    justify-content: center;
+   text-align: center;
    padding-top: 100px;
 }
 .burger__list {
@@ -93,7 +94,7 @@
     display: flex;
   }
 }
-@media(min-width:600px){
+@media(min-width:601px){
   .burger__container {
     display: none;
   }
