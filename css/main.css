@@ -54,6 +54,10 @@ body {
   cursor: pointer;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 :root {
   --basic-color: #000;
   --text-color: #545A58;
@@ -87,6 +91,7 @@ body {
   font-weight: 800;
   line-height: 134.78%;
   color: var(--basic-color);
+  z-index: 500;
 }
 
 .menu__list {
@@ -304,6 +309,12 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .hero__content {
+    z-index: 0;
+  }
+  .hero__form {
+    z-index: 0;
+  }
   .hero__swimmer-container {
     display: none;
   }
@@ -1229,7 +1240,7 @@ body {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 500;
 }
 
 .burger__btn > span,
@@ -1256,18 +1267,19 @@ body {
   visibility: hidden;
   position: fixed;
   z-index: 50;
-  top: 100px;
+  top: 0px;
   right: -100%;
-  min-width: 600px;
-  height: 400px;
-  padding: 20px 40px;
   margin: 0 auto;
+  min-width: 600px;
+  min-height: 400px;
+  padding: 20px 40px;
   background-color: #ECEFF1;
 }
 
 .burger__nav {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .burger__list {
@@ -1306,7 +1318,7 @@ body {
   transform: rotate(90deg);
 }
 
-#burger__toggle:checked ~ .burger__container {
+.active__burger {
   visibility: visible;
   right: 0%;
 }

@@ -173,6 +173,12 @@
     }
 }
 @media(max-width:768px){
+    .hero__content {
+        z-index: 0;
+    }
+    .hero__form {
+        z-index: 0;
+    }
     .hero__swimmer-container {
         display: none;
     }
