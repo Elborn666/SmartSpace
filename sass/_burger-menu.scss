@@ -93,3 +93,8 @@
       display: flex;
     }
 }
+@media(min-width:600px){
+   .burger__container {
+     display: none;
+  }
+}
