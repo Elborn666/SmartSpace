@@ -266,14 +266,22 @@ body {
   }
 }
 @media (max-width: 1200px) {
+  .hero__container::after {
+    display: none;
+  }
   .hero__body {
     display: block;
     padding-top: 100px;
   }
-  .hero__container::after {
-    display: none;
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .hero__partner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 15px;
   }
 }
