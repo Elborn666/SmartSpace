@@ -118,14 +118,7 @@
         width: 100%;
     }
     .loved__partner-icon {
+        justify-content: center;
         gap: 35px;
     }
-}
-@media(max-width:600px){
-    .loved__partner-icon {
-        justify-content: center;
-    }
-}
-@media(max-width:480px){
-    
 }

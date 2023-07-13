@@ -861,12 +861,8 @@ body {
     width: 100%;
   }
   .loved__partner-icon {
-    gap: 35px;
-  }
-}
-@media (max-width: 600px) {
-  .loved__partner-icon {
     justify-content: center;
+    gap: 35px;
   }
 }
 .get__container {
@@ -898,7 +894,7 @@ body {
 
 .get__form {
   display: flex;
-  width: 686px;
+  max-width: 686px;
   margin: 0 auto;
   justify-content: space-between;
   background: var(--white-color);
@@ -906,7 +902,7 @@ body {
 }
 
 .get__input {
-  width: 400px;
+  max-width: 400px;
   padding: 0px 0px 0px 45px;
   font-size: 20px;
   font-weight: 700;
@@ -915,7 +911,6 @@ body {
   outline: none;
   border: none;
 }
-
 .get__input::placeholder {
   font-size: 17px;
   font-weight: 500;
@@ -944,44 +939,48 @@ body {
   margin: 0 auto;
   border-bottom: 1px solid #DEDFE1;
   padding: 160px 0px 50px;
-  width: 889px;
+  max-width: 889px;
 }
 
-@media (max-width: 1060px) {
-  .get {
-    padding-top: 0px;
+@media (max-width: 1200px) {
+  .get__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  .get__box {
-    padding: 50px 15px 0px 15px;
-  }
-  .get__line {
-    padding: 30px 0px 0px 0px;
-    width: 100%;
-  }
-}
-@media (max-width: 700px) {
   .get__title {
     font-size: 32px;
   }
-  .get__form-form {
-    flex-direction: column;
-  }
-  .get__button-button {
-    padding: 26px 0px 26px 0px;
-  }
-  .get__input {
-    width: 100%;
-  }
-  .get__button {
-    width: 100%;
-  }
-  .get__form {
-    width: 100%;
+  .get__line {
+    padding-top: 50px;
   }
 }
-@media (max-width: 500px) {
-  .get__box {
-    padding: 20px 15px 0px 15px;
+@media (max-width: 768px) {
+  .get__container {
+    padding-top: 0px;
+  }
+  .get__body {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .get__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .get__input {
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .get__line {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .get__title {
+    font-size: 22px;
+  }
+  .get__subtitle {
+    font-size: 18px;
   }
 }
 .footer__container {
