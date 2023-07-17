@@ -40,7 +40,7 @@
   right: -100%;
 
   margin: 0 auto;
-  min-width: 350px;
+  min-width: 600px;
   min-height: 400px;
   padding: 20px 40px;
   
@@ -48,9 +48,8 @@
 }
 .burger__nav {
    display: flex;
-   justify-content: center;
-   text-align: center;
-   padding-top: 100px;
+   justify-content: end;
+   padding-top: 60px;
 }
 .burger__list {
    display: flex;
@@ -62,6 +61,7 @@
    &:hover{
       background-color: #CFD8DC;
       text-decoration: underline;
+      border-radius: 5px;
    }
 }
 .burger__link {
