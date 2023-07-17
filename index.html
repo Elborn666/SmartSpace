@@ -376,7 +376,7 @@
                     <p class="get__subtitle">To join the worldwide community</p>
                 </div>
                 <form class="get__form">
-                    <input type="email" class="get__input" placeholder="Type your Email Address">
+                    <input type="email" class="get__input" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" placeholder="Type your Email Address">
                     <div class="get__button-button">
                         <button type="submit" class="get__button button">Send Now</button>
                     </div>
@@ -409,10 +409,23 @@
         <div class="footer__Copyright">Copyright &copy; 2021 AR Shakir. All Rights Reseved.</div>
     </footer>
 
+    <div class="backdrop__subscribe">
+        <div class="modal__subscribe">
+            <div class="modal__subscribe-container">
+                <div class="modal__subscribe-body">
+                    <h2 class="modal__subscribe-title">
+                        Joining</h2>
+                    <p class="modal__subscribe-text">You have successfully joined the community.</p>
+                    <button class="modal__subscribe-button" type="button">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/burger-menu.js"></script>
+    <script src="./js/subscribe.js" type="module"></script>
 </body>
 
 </html>
