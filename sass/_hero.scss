@@ -169,6 +169,7 @@
     .hero__partner-list {
         gap: 0;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 @media(max-width:768px){
