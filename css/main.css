@@ -38,7 +38,7 @@ body {
 .title {
   font-family: "Manrope";
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 55px;
   letter-spacing: 0em;
 }
@@ -734,7 +734,7 @@ body {
   }
   .week__title {
     font-size: 22px;
-    margin-bottom: 10;
+    margin-bottom: 10px;
   }
   .week__info {
     padding: 20px 0px 0px 0px;
